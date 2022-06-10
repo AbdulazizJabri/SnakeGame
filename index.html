@@ -2,10 +2,84 @@
     <head>
         <title>Abdulaziz's Snake Game</title>
         <style>
+          html {
+          background-color: #10151B;
+          }
 
+          body {
+          font-family: "Oswald", sans-serif;
+          }
+
+          h1 {
+          line-height: .95;
+          color: #66fcf1;
+          font-weight: 900;
+          font-size: 50px;
+          text-transform: uppercase;
+          pointer-events: none;
+          text-align: center;
+          }
+
+          p {
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+          }
+
+          .center {
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 581px;
+          height: 50%;
+          }
+
+          .btn {
+          margin: 0 auto;
+          width: 170px;
+          height: 60px;
+          padding: 6px 0 0 3px;
+          border: 2px solid #66fcf1;
+          border-radius: 2px;
+          background: none;
+          font-size: 16px;
+          line-height: 54px;
+          color: #fff;
+          letter-spacing: .25em;
+          text-decoration: none;
+          font-weight: 600;
+          text-transform: uppercase;
+          vertical-align: middle;
+          text-align: center;
+          -webkit-transition: background .4s, color .4s;
+          transition: background .4s, color .4s;
+          }
+
+          .btn:hover {
+          background: #66fcf1;
+          color: #10151B;
+          }
+
+          .center-btn {
+            text-align: center;
+          }
+          a:visited {
+           text-decoration: none;
+           color: white;
+          }
         </style>
     </head>
-    <h1>Welcome! Wanna play Snake Game?</h1>
-    <p>Are you on mobile or a desktop browser?</p>
-    <a href="snakeGameMobile.html">Mobile</a> <br> <a href="snakeGameDesktop.html">Desktop Browser</a>
+    <h1 style="font-size: 11px; color: white; margin-top: 2rem">Abdulaziz Al Jabri</h1>
+    <div class="center">
+      <h1>Welcome!</h1>
+      <h1>Want to play Snake Game?</h1>
+      <p style="margin: 30px">Are you on mobile or a desktop browser?</p>
+      <div class="btn" ><a href="snakeGameMobile.html">Mobile</a></div>
+      <br>
+      <div class="btn" ><a href="snakeGameDesktop.html">Desktop</a></div>
+    </div>
 </html>

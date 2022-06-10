@@ -7,7 +7,7 @@ const ground = new Image();
 ground.src = "images/base.png";
 
 const gameover = new Image();
-gameover.src = "images/gameover.png";
+gameover.src = "images/gameover_desktop.png";
 
 const foodImg = new Image();
 foodImg.src = "images/food.png";
@@ -120,6 +120,7 @@ function draw()
     {
     clearInterval(game);
 	context.drawImage(gameover, 10, 10);
+
     }
 
     snake.unshift(newHead);
