@@ -7,7 +7,7 @@ const ground = new Image();
 ground.src = "images/base.png";
 
 const gameover = new Image();
-gameover.src = "images/gameover_desktop.png";
+gameover.src = "images/gameover.png";
 
 const foodImg = new Image();
 foodImg.src = "images/food.png";
@@ -119,7 +119,13 @@ function draw()
     if (snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake))
     {
     clearInterval(game);
-	context.drawImage(gameover, 10, 10);
+  	context.drawImage(gameover, 10, 10);
+
+    let link = "snakeGameDesktop.html";
+
+    let targetElement = document.getElementById("div1");
+
+    targetElement.innerHTML = `<a href=${link}>Try Again?</a>`;
 
     }
 
