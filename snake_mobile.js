@@ -31,17 +31,21 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
             /* right swipe */
             console.log("left");
+            d = "LEFT";
         } else {
             /* left swipe */
             console.log("right");
+            d = "RIGHT";
         }
     } else {
         if ( yDiff > 0 ) {
             /* down swipe */
             console.log("up");
+            d = "UP";
         } else {
             /* up swipe */
             console.log("down");
+            d = "DOWN";
         }
     }
     /* reset values */
@@ -86,28 +90,6 @@ let food =
 let score = 0;
 
 let d;
-
-document.addEventListener("keydown",direction);
-
-function direction(event){
-    let key = event.keyCode;
-    if ( key == 37 && d != "RIGHT")
-    {
-        d = "LEFT";
-    }
-    else if (key == 38 && d != "DOWN")
-    {
-        d = "UP";
-    }
-    else if (key == 39 && d != "LEFT")
-    {
-        d = "RIGHT";
-    }
-    else if (key == 40 && d != "UP")
-    {
-        d = "DOWN";
-    }
-}
 
 function collision(head,array)
 {
