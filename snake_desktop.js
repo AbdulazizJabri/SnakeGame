@@ -122,10 +122,8 @@ function draw()
   	context.drawImage(gameover, 10, 10);
 
     let link = "snakeGameDesktop.html";
-
     let targetElement = document.getElementById("div1");
-
-    targetElement.innerHTML = `<a href=${link}>Try Again?</a>`;
+    targetElement.innerHTML = `<a href=${link}><img src="images/restart.png" alt="restart" style="height: 50px; margin-top: 30px"></a>`;
 
     }
 
