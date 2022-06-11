@@ -9,6 +9,9 @@ ground.src = "images/base.png";
 const gameover = new Image();
 gameover.src = "images/gameover.png";
 
+const controls = new Image();
+controls.src = "images/arrowKeys.png"
+
 const foodImg = new Image();
 foodImg.src = "images/food.png";
 
@@ -74,6 +77,7 @@ function draw()
 {
 
     context.drawImage(ground,0,0);
+    context.drawImage(controls, 480, 0, 100, 100);
 
     for ( let i = 0; i < snake.length ; i++)
     {
