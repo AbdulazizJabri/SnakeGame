@@ -73,6 +73,7 @@ foodImg.src = "images/food.png";
 
 let dead = new Audio("dead.mp3");
 let song = new Audio("song.mp3");
+song.autoplay = true;
 let eat = new Audio();
 
 let snake = [];
