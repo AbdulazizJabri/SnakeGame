@@ -71,7 +71,8 @@ controls.src = "images/swipe.png"
 const foodImg = new Image();
 foodImg.src = "images/food.png";
 
-let dead = new Audio();
+let dead = new Audio("dead.mp3");
+let song = new Audio("song.mp3");
 let eat = new Audio();
 
 let snake = [];
@@ -109,7 +110,7 @@ function collision(head,array)
 
 function draw()
 {
-
+    song.play();
     context.drawImage(ground,0,0);
     context.drawImage(controls, 490, 13, 70, 70);
 
@@ -158,6 +159,8 @@ function draw()
     {
     clearInterval(game);
 	  context.drawImage(gameover, 10, 10);
+    song.pause();
+    dead.play();
 
     let link = "snakeGameMobile.html";
     let targetElement = document.getElementById("div1");
