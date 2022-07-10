@@ -63,6 +63,11 @@ color: #10151B;
 .center-btn {
   text-align: center;
 }
+
+a {
+  color: white;
+}
+
 a:visited {
  text-decoration: none;
  color: white;
