@@ -66,6 +66,7 @@ color: #10151B;
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 a:visited {
