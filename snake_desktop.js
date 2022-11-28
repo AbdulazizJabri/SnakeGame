@@ -82,7 +82,7 @@ function draw()
 
     for ( let i = 0; i < snake.length ; i++)
     {
-        context.fillStyle = ( i == 0 )? "red" : "red";
+        context.fillStyle = ( i == 0 )? "white" : "white";
         context.fillRect(snake[i].x,snake[i].y,box,box);
 
         context.strokeStyle = "black";
